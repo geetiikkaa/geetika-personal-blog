@@ -1,8 +1,4 @@
 
-Built by https://www.blackbox.ai
-
----
-
 # Geetika Pandey - Personal Blog
 
 ## Project Overview
