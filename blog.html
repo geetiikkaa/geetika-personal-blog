@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Geetika Pandey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html">Geetika Pandey</a></h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="resume.html" class="nav-link">Resume</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="dark-mode-toggle" class="dark-mode-toggle">
+                <span class="toggle-text">Dark Mode</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="blog-section">
+            <div class="container">
+                <h2 class="section-title">My Blog Posts</h2>
+                <p class="section-description">Thoughts, experiences, and insights from my journey in tech</p>
+                
+                <div id="blog-error" class="error-message" style="display: none;">
+                    <p>Sorry, unable to load blog posts at the moment. Please try again later.</p>
+                </div>
+                
+                <div id="blog-cards" class="blog-grid">
+                    <!-- Blog cards will be dynamically inserted here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Geetika Pandey. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
