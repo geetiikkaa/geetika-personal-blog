@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Geetika Pandey - Personal Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Geetika Pandey</h1>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="dark-mode-toggle" class="dark-mode-toggle">
+        <span class="toggle-text">Dark Mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="hero-title">
+            <span id="typed-text"></span>
+          </h2>
+          <p class="hero-description">
+            Hi, I'm Geetika Pandey, a passionate BCA student and aspiring web developer. 
+            I love exploring new technologies, sharing my learning journey, and creating 
+            meaningful digital experiences. Join me as I document my adventures in code, 
+            design, and everything tech.
+          </p>
+          <a href="blog.html" class="cta-button">Read Blogs</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Geetika Pandey. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      var typed = new Typed('#typed-text', {
+        strings: [
+          "Welcome to my digital space",
+          "I'm Geetika Pandey",
+          "Web Developer • Designer • Dreamer",
+          "Let's create something amazing"
+        ],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 2000,
+        loop: true,
+        showCursor: true,
+        cursorChar: '|',
+        onBegin: () => {
+          const fallback = document.getElementById('typed-text-fallback');
+          if (fallback) fallback.style.display = 'none';
+        },
+        onComplete: () => {
+          const fallback = document.getElementById('typed-text-fallback');
+          if (fallback) fallback.style.display = 'block';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
